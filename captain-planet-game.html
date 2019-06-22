@@ -39,13 +39,13 @@
       <div class="col-lg-6">
         <!-- Controls (Blur Captain Planet)-->
         <div id="sizeControls" class="card">
-          <h4 class="card-header">Superpowers - Blur!</h4>
+          <h4 class="card-header">Superpowers - Flip!</h4>
           <div class="card-body">
             <div class="text-center">
-              <button class="btn btn-dark btn-lg unblur-button">
+              <button class="btn btn-dark btn-lg unflip-button">
                 <span class="fa fa-ok"></span> Put me back!</button>
-              <button class="btn btn-primary btn-lg blur-button">
-                <span class="fa fa-plus"></span> Blur Me!</button>
+              <button class="btn btn-primary btn-lg flip-button">
+                <span class="fa fa-plus"></span> Flip Me!</button>
             </div>
           </div>
         </div>
@@ -128,15 +128,17 @@
       });
 
 
-      //Blur Buttons
-      $(".blur-button").on("click",function(){
+      //Flip Buttons
+      $(".flip-button").on("click",function(){
         console.log("clicked blur");
-        captainPlanet.fadeOut("slow", "swing");
+        // captainPlanet.fadeOut(3000);
+        captainPlanet.css({'transform': 'rotate(-180deg)'});
       });
 
-      $(".unblur-button").on("click",function(){
+      $(".unflip-button").on("click",function(){
         console.log("clicked blur");
-        captainPlanet.fadeIn("slow" ,"swing");
+        // captainPlanet.fadeIn(3000);
+        captainPlanet.css({'transform': 'rotate(360deg)'});
       });
 
       // Size Buttons
