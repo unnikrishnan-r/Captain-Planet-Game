@@ -132,13 +132,13 @@
       $(".flip-button").on("click",function(){
         console.log("clicked blur");
         // captainPlanet.fadeOut(3000);
-        captainPlanet.css({'transform': 'rotate(-180deg)'});
+        captainPlanet.css({'transform': 'rotate(-180deg)' , 'transition-duration': '5s'});
       });
 
       $(".unflip-button").on("click",function(){
         console.log("clicked blur");
         // captainPlanet.fadeIn(3000);
-        captainPlanet.css({'transform': 'rotate(360deg)'});
+        captainPlanet.css({'transform': 'rotate(360deg)' , 'transition-duration': '5s'});
       });
 
       // Size Buttons
